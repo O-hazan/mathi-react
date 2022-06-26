@@ -1,0 +1,305 @@
+import React, { Component } from "react";
+
+class Around extends Component {
+  render() {
+    return (
+      <div id="top">
+        <header>
+          <nav
+            id="sidebarMenu"
+            className="collapse d-lg-block sidebar collapse bg-white"
+          >
+            <div className="position-sticky">
+              <div className="list-group list-group-flush mx-3 mt-4">
+                <a
+                  href="/public/index.html"
+                  className="list-group-item list-group-item-action py-2 ripple"
+                  aria-current="true"
+                >
+                  <i className="fas fa-tachometer-alt fa-fw me-3"></i>
+                  <span>Gallary</span>
+                </a>
+                <a
+                  href="/public/index.html"
+                  className="list-group-item list-group-item-action py-2 ripple active"
+                >
+                  <i className="fas fa-chart-area fa-fw me-3"></i>
+                  <span>Calendar</span>
+                </a>
+                <a
+                  href="/stats.html"
+                  className="list-group-item list-group-item-action py-2 ripple"
+                  id="stats"
+                  // onClick={updateStats}
+                >
+                  <i className="fas fa-lock fa-fw me-3"></i>
+                  <span>Stats</span>
+                </a>
+                <a
+                  href="/milestones.html"
+                  className="list-group-item list-group-item-action py-2 ripple"
+                >
+                  <i className="fas fa-chart-line fa-fw me-3"></i>
+                  <span>Milestones</span>
+                </a>
+                <a
+                  href="/public/index.html"
+                  className="list-group-item list-group-item-action py-2 ripple"
+                >
+                  <i className="fas fa-chart-pie fa-fw me-3"></i>
+                  <span>News</span>
+                </a>
+                <a
+                  href="/public/index.html"
+                  className="list-group-item list-group-item-action py-2 ripple"
+                >
+                  <i className="fas fa-chart-bar fa-fw me-3"></i>
+                  <span>Settings</span>
+                </a>
+              </div>
+            </div>
+          </nav>
+
+          <nav
+            id="main-navbar"
+            className="navbar navbar-expand-lg navbar-light bg-white fixed-top"
+          >
+            <div className="container-fluid">
+              <button
+                className="navbar-toggler"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#sidebarMenu"
+                aria-controls="sidebarMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i className="fas fa-bars"></i>
+              </button>
+
+              <a className="navbar-brand" href="/public/index.html">
+                <img
+                  src="./Resources/b327bb39d5264e7995b550d6d41c413d (2).png"
+                  height="25"
+                  alt="Mathi  Logo"
+                  loading="lazy"
+                />
+              </a>
+
+              <ul className="navbar-nav ms-auto d-flex flex-row">
+                <li className="nav-item dropdown">
+                  <a
+                    className="nav-link me-3 me-lg-0 dropdown-toggle hidden-arrow"
+                    href="/public/index.html"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-mdb-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i className="fas fa-bell"></i>
+                    <span className="badge rounded-pill badge-notification bg-danger">
+                      1
+                    </span>
+                  </a>
+                  <ul
+                    className="dropdown-menu dropdown-menu-end"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <li>
+                      <a className="dropdown-item" href="/public/index.html">
+                        Some news
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="/public/index.html">
+                        Another news
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="/public/index.html">
+                        Something else here
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li className="nav-item">
+                  <a
+                    className="nav-link me-3 me-lg-0"
+                    href="/public/index.html"
+                  >
+                    <i className="fas fa-fill-drip"></i>
+                  </a>
+                </li>
+                <li className="nav-item me-3 me-lg-0">
+                  <a className="nav-link" href="public/index.html">
+                    <i className="fab fa-github"></i>
+                  </a>
+                </li>
+
+                <li className="nav-item dropdown">
+                  <a
+                    className="nav-link me-3 me-lg-0 dropdown-toggle hidden-arrow"
+                    href="/public/index.html"
+                    id="navbarDropdown"
+                    role="button"
+                    data-mdb-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i className="flag-united-kingdom flag m-0"></i>
+                  </a>
+                  <ul
+                    className="dropdown-menu dropdown-menu-end"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <li>
+                      <a className="dropdown-item" href="/public/index.html">
+                        <i className="flag-united-kingdom flag"></i>English
+                        <i className="fa fa-check text-success ms-2"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="/public/index.html">
+                        <i className="flag-poland flag"></i>Polski
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="/public/index.html">
+                        <i className="flag-china flag"></i>中文
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="/public/index.html">
+                        <i className="flag-japan flag"></i>日本語
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="/public/index.html">
+                        <i className="flag-germany flag"></i>Deutsch
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="/public/index.html">
+                        <i className="flag-france flag"></i>Français
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="/public/index.html">
+                        <i className="flag-spain flag"></i>Español
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="/public/index.html">
+                        <i className="flag-russia flag"></i>Русский
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="/public/index.html">
+                        <i className="flag-portugal flag"></i>Português
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li className="nav-item dropdown">
+                  <a
+                    className="nav-link dropdown-toggle hidden-arrow d-flex align-items-center"
+                    href="/public/index.html"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-mdb-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img
+                      src="./Resources/sunglasses.jpeg"
+                      className="rounded-circle"
+                      height="22"
+                      alt="Avatar"
+                      loading="lazy"
+                    />
+                  </a>
+                  <ul
+                    className="dropdown-menu dropdown-menu-end"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <li>
+                      <a className="dropdown-item" href="/public/index.html">
+                        My profile
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="/public/index.html">
+                        Settings
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item" href="/public/index.html">
+                        Logout
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        <main style={{ marginTop: "58px" }}>
+          <div className="container-fluid row pt-2">
+            <div
+              id="carouselExampleSlidesOnly"
+              className="col carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div className="carousel-inner">
+                <div className="carousel-item active">
+                  <img
+                    src="/Resources/sup.jpg"
+                    className="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div className="carousel-item">
+                  <img
+                    src="/Resources/sup.jpg"
+                    className="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div className="carousel-item">
+                  <img
+                    src="/Resources/sup.jpg"
+                    className="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="col-2">
+              <div className="card card-right" style={{ width: "18rem" }}>
+                <img
+                  src="/Resources/rice.jpeg"
+                  className="card-img-top"
+                  alt="..."
+                />
+                <div className="card-body">
+                  <h5 className="card-title">Eating out</h5>
+                  <p className="card-text">Watch mathi's last Milstones.</p>
+                </div>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item">Climbing the triangle</li>
+                  <li className="list-group-item">Saying si</li>
+                </ul>
+                <div className="card-body">
+                  <a href="/milestones.html" className="card-link">
+                    See All Milestones
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    );
+  }
+}
+
+export default Around;
